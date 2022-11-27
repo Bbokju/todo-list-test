@@ -21,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 3003"
+    "server": "json-server --watch db.json --port 3003",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^18.11.9"
-  }
+    "@types/node": "^18.11.9",
+    "gh-pages": "^4.0.0"
+  },
+  "homepage": "https://bbokju.github.io/todo-list-test/"
 }
